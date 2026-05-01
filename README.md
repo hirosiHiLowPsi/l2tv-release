@@ -5,6 +5,12 @@ check clear lamps, scores, BP, IR ranks, rival comparisons, and update history.
 This tool is only for viewing LR2 data.
 It does not modify or delete score.db, song.db, or Rival DB files.
 
+Important notice:
+
+- If you installed version 1.0.1 or earlier directly into a personal folder such as Desktop, do not run the uninstaller.
+- Version 1.0.2 and later disable custom install locations and include a safety check that prevents deleting anything other than a dedicated L2TV folder.
+- Please use version 1.0.2 or later for the latest public release.
+
 
 1. What This Tool Can Do
 ------------------------
