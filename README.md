@@ -1,15 +1,12 @@
+L2TV User Guide / Safety Notes
+==============================
+
 L2TV stands for "LR2 Table Viewer".
 It reads local Lunatic Rave 2 databases and BMS difficulty tables so you can
-check clear lamps, scores, BP, IR ranks, rival comparisons, and update history.
+check clear lamps, scores, BP, rival comparisons, and update history.
 
 This tool is only for viewing LR2 data.
 It does not modify or delete score.db, song.db, or Rival DB files.
-
-Important notice:
-
-- If you installed version 1.0.1 or earlier directly into a personal folder such as Desktop, do not run the uninstaller.
-- Version 1.0.2 and later disable custom install locations and include a safety check that prevents deleting anything other than a dedicated L2TV folder.
-- Please use version 1.0.2 or later for the latest public release.
 
 
 1. What This Tool Can Do
@@ -41,7 +38,6 @@ Difficulty tables:
 Player Data:
 
 - Player name
-- LR2ID
 - SP grade
 - Official SP grade name
 - st/sl grades
@@ -64,7 +60,7 @@ Lamp summary:
 Chart list:
 
 - Show chart lists by level
-- Show Lv / Title / Artist / Lamp / Rank / EX/Rate / BP / IR Rank / Play Count / Rival
+- Show Lv / Title / Artist / Lamp / Rank / EX/Rate / BP / Play Count / Rival
 - Show Rank such as AAA / AA / A as a colored badge
 - Lv is shown as a heading only
 - Sort by Title, Artist, and other columns
@@ -72,7 +68,6 @@ Chart list:
 - Show level labels with table symbols
 - Color rows by clear lamp
 - Use short lamp labels
-- Show IR rank
 - Show rival comparison
 - Show BP
 - NO PLAY charts show BP as NO Data
@@ -89,7 +84,6 @@ Lamp Updates:
 - Export today's updates as an image.
 - Show the key hit count for the current load.
 - Show the number of updated charts.
-- Show IR 1st / 2nd / 3rd / TOP10 badges.
 
 RIVAL:
 
@@ -119,9 +113,6 @@ Display settings:
 - Light Aqua theme
 - Geek Dark theme
 - One-click CLEAR LAMP / SCORE LAMP switching
-- IR rank display mode
-  - Count: 1st(of 500)
-  - Percent: 1st(Top 0.20%)
 
 
 2. Requirements
@@ -157,9 +148,8 @@ If you are unsure, look for LR2files inside your LR2 folder.
 
 Installer version:
 
-1. Run L2TV-Setup-1.0.1.exe.
-2. Choose the install location.
-3. Install the app.
+1. Run L2TV-Setup-1.0.3.exe.
+2. Install the app.
 4. Start L2TV.
 
 zip / win-unpacked version:
@@ -201,7 +191,6 @@ Display settings:
 - Choose the display language from Japanese / English.
 - On first launch, a message asks you to choose the display language.
 - Choose the theme from Light Aqua / Geek Dark.
-- Choose IR rank display from Count / Percent.
 - Choose whether BP updates are included in Lamp Updates.
 
 Saved data:
@@ -271,31 +260,7 @@ RIVAL:
   Shows score win/loss against loaded rivals.
 
 
-8. IR Rank
-----------
-
-The chart list can show IR rank.
-
-Display modes:
-
-- Count
-  Example: 1st(of 500)
-
-- Percent
-  Example: 1st(Top 0.20%)
-
-1st / 2nd / 3rd:
-  Shown with gold / silver / bronze animation.
-
-4th to 10th:
-  Shown as TOP10.
-
-Note:
-  This uses information available in song.db / score.db.
-  If no information exists, it shows NO Data.
-
-
-9. RIVAL Feature
+8. RIVAL Feature
 ----------------
 
 Open the rival menu with the RIVAL button.
@@ -329,7 +294,7 @@ Rival column in the chart list:
 - Rival lamp.
 
 
-10. Lamp Updates
+9. Lamp Updates
 ----------------
 
 Lamp Updates compares the previous load with the current load.
@@ -351,7 +316,7 @@ Image export:
   Use "Export Today's Updates" in Lamp Updates.
 
 
-11. Image Export
+10. Image Export
 ----------------
 
 Today's update image:
@@ -391,7 +356,7 @@ Save complete:
 - "Screenshot saved!" is shown.
 
 
-12. Saved Data
+11. Saved Data
 --------------
 
 L2TV saves the following information so it can be used immediately next time:
@@ -405,7 +370,6 @@ L2TV saves the following information so it can be used immediately next time:
 - Selected difficulty table presets
 - Selected display language
 - Selected theme
-- IR rank display mode
 - Whether BP updates are included in Lamp Updates
 - Previous load result
 
@@ -418,7 +382,7 @@ Only L2TV's saved app data is deleted.
 LR2 score.db, song.db, and Rival DB files are not deleted.
 
 
-13. Automatic Reload
+12. Automatic Reload
 --------------------
 
 If the previously loaded score.db / song.db has changed,
@@ -428,19 +392,19 @@ This makes it easier to open L2TV after playing LR2 and check new lamps,
 BP updates, score updates, and related changes.
 
 
-14. Themes
+13. Themes
 ----------
 
 Light Aqua:
   A bright aqua-based theme.
 
 Geek Dark:
-  A dark theme inspired by LR2IR.
+  A dark, black-based theme.
 
 You can switch themes from Menu.
 
 
-15. Safety
+14. Safety
 ----------
 
 L2TV reads LR2 score.db, song.db, and Rival DB files,
@@ -464,7 +428,7 @@ In short, L2TV is a tool for viewing LR2 data,
 not for changing or deleting LR2 score data.
 
 
-16. Network Access
+15. Network Access
 ------------------
 
 L2TV may connect to the internet to load difficulty table URLs.
@@ -485,7 +449,7 @@ Data that is not sent:
 DB contents are read and displayed on the local PC.
 
 
-17. Windows Warnings
+16. Windows Warnings
 --------------------
 
 Personal, unsigned apps may trigger warnings from Windows SmartScreen
@@ -497,14 +461,13 @@ It is a common warning for apps with little signing or distribution history.
 If you are unsure, confirm the distribution source before running it.
 
 
-18. Updating
+17. Updating
 ------------
 
 Installer version:
 
-1. Run the new L2TV-Setup-1.0.1.exe.
-2. Choose the same install location.
-3. Install over the previous version.
+1. Run the new L2TV-Setup-1.0.3.exe.
+2. Install over the previous version.
 
 zip / win-unpacked version:
 
@@ -517,7 +480,7 @@ Notes:
 - LR2 score.db / song.db are not part of the update process.
 
 
-19. Uninstalling
+18. Uninstalling
 ----------------
 
 Installer version:
@@ -525,6 +488,11 @@ Installer version:
 1. Open Windows Settings.
 2. Find L2TV under Apps.
 3. Uninstall it.
+
+Important:
+
+- If you installed version 1.0.1 or earlier directly into a personal folder such as Desktop, do not run the uninstaller.
+- Version 1.0.2 and later include a safety check that prevents deleting anything other than a dedicated L2TV folder.
 
 zip / win-unpacked version:
 
@@ -538,11 +506,11 @@ If you also want to delete saved app data:
 4. Then uninstall the app.
 
 
-20. FAQ
+19. FAQ
 -------
 
-Q. Can I use it if my LR2IR profile page is private?
-A. Yes. It reads from score.db / song.db, so a private profile is fine.
+Q. Can I use it without an internet connection?
+A. You can view previously saved settings and local DB data. Loading new difficulty table URLs requires an internet connection.
 
 Q. Can score.db or song.db be modified?
 A. No. They are handled as read-only.
@@ -585,7 +553,7 @@ Q. What is Folder Option?
 A. A compact option display for the open level folder. It can show the sort header.
 
 
-21. Version
+20. Version
 -----------
 
-L2TV 1.0.1
+L2TV 1.0.3
