@@ -1,574 +1,122 @@
-L2TV User Guide / Safety Notes
-==============================
-
-Important Notice: Uninstalling and Using the zip Version
--------------------------------------------------------
-
-- If you use the zip version, extract L2TV-1.0.4-win-x64.zip into an empty folder before running L2TV.exe.
-- The zip version does not need installation. To remove it, do not use the Windows uninstaller. Move the extracted dedicated L2TV folder to the Recycle Bin instead.
-- Only delete the dedicated L2TV folder you extracted. Do not delete parent folders such as Desktop or Downloads.
-- If you installed version 1.0.1 or earlier directly into a personal folder such as Desktop, do not run the uninstaller.
-
-L2TV stands for "LR2 Table Viewer".
-It reads local Lunatic Rave 2 databases and BMS difficulty tables so you can
-check clear lamps, scores, BP, rival comparisons, and update history.
-
-This tool is only for viewing LR2 data.
-It does not modify or delete score.db, song.db, or Rival DB files.
-
-
-1. What This Tool Can Do
-------------------------
-
-Basic features:
-
-- Load an LR2 score.db.
-- Load an LR2 song.db.
-- Load the LR2 Rival folder.
-- Show the player name.
-- Show the SP grade.
-- Show st/sl grades.
-- Load difficulty tables and summarize only registered charts.
-- Show Player Data even without loading a difficulty table.
-
-Difficulty tables:
-
-- Stella
-- Satellite
-- Insane BMS Table
-- Overjoy
-- Dystopia
-- Manually entered table URLs
-- Show / hide loaded difficulty tables
-- Exclude a URL without deleting it
-- Show loaded tables by table title instead of URL
-
-Player Data:
-
-- Player name
-- ID
-- SP grade
-- Official SP grade name
-- st/sl grades
-- Official st/sl grade names
-- Special grade display such as Overjoy
-- Rainbow animation for special grades such as st12 / Overjoy
-- Key hit count for the current load
-- Play time if score.db has a play time field
-
-Lamp summary:
-
-- CLEAR LAMP graph
-- SCORE LAMP graph
-- Horizontal bar graph by level
-- Percentage labels inside graphs
-- Lamp breakdown
-- Score breakdown
-- Lamp / score breakdown for each level folder
-- Level folder coloring based on completion status
-
-Chart list:
-
-- Show chart lists by level
-- Show Lv / Title / Artist / Lamp / Rank / EX/Rate / BP / Play Count / Rival
-- Show Rank such as AAA / AA / A as a colored badge
-- Lv is shown as a heading only
-- Sort by Title, Artist, and other columns
-- Center-align columns other than Title and Artist
-- Show level labels with table symbols
-- Color rows by clear lamp
-- Use short lamp labels
-- Show rival comparison
-- Show BP
-- NO PLAY charts show BP as NO Data
-- Charts missing from song.db are shown as NS
-- While a level folder is open, use the Folder Close button at the bottom to close it.
-- While a level folder is open, use the Folder Option button to show a compact sort header.
-
-Lamp Updates:
-
-- Show charts whose clear lamp changed since the previous load.
-- Optionally show charts whose BP decreased, regardless of clear lamp.
-- Show charts with improved EX score in the Score Update section.
-- Charts with lamp or BP updates are also shown in Score Update if their score improved.
-- Export today's updates as an image.
-- Show the key hit count for the current load.
-- Show play time if score.db has a play time field.
-- Show the number of updated charts.
-
-RIVAL:
-
-- Load the LR2 Rival folder.
-- Compare clear lamps by rival.
-- Compare score win/loss by rival.
-- Show opponent score / rate / lamp in the Rival column of the chart list.
-- Show WIN / LOSE counts by rival.
-- Show WIN / LOSE rates as a yellow / blue graph.
-- NO PLAY is not counted as a loss.
-- Choose comparison targets with checkboxes.
-- Select All / Clear All.
-- Switch win/loss scope between all charts and each difficulty table.
-- Sort rivals by win rate, loss rate, or name.
-
-Image export:
-
-- Export today's updates.
-- Export difficulty table summaries.
-- Export CLEAR LAMP / SCORE LAMP graphs.
-- Choose any screenshot save folder.
-- Show "Screenshot saved!" when saving is complete.
-
-Display settings:
-
-- Switch system language between Japanese and English.
-- Light Aqua theme
-- Geek Dark theme
-- One-click CLEAR LAMP / SCORE LAMP switching
-
-
-2. Requirements
----------------
-
-- Windows PC
-- Lunatic Rave 2
-- LR2 score.db
-- LR2 song.db
-
-Useful optional items:
-
-- LR2 Rival folder
-- Difficulty table URLs you want to load
-
-Common locations:
-
-score.db:
-  LR2files\Database\Score\PlayerName.db
-
-song.db:
-  LR2files\Database\song.db
-
-Rival folder:
-  LR2files\Rival
-
-Locations differ by environment.
-If you are unsure, look for LR2files inside your LR2 folder.
-
-
-3. Starting the App
--------------------
-
-zip version:
-
-1. Extract L2TV-1.0.4-win-x64.zip into an empty folder.
-2. Run L2TV.exe inside the extracted folder.
-3. Installation is not required.
-
-Installer version:
-
-1. Run L2TV-Setup-1.0.4.exe.
-2. Install the app.
-3. Start L2TV.
-
-
-4. First Use
-------------
-
-1. Start L2TV.
-2. Open Menu from the upper right.
-3. Choose score.db from Browse next to LR2 score.db Path.
-4. Choose song.db from Browse next to song.db Path.
-5. If needed, choose the Rival folder from Browse next to Rival Folder.
-6. If needed, choose difficulty table presets.
-7. If needed, enter table URLs manually.
-8. Press Load Tables and Lamps.
-
-Even if no difficulty table is selected, Player Data can still be shown.
-
-
-5. Menu Settings
-----------------
-
-Load settings:
-
-- Set score.db.
-- Set song.db.
-- Set the screenshot save folder.
-- Set the Rival folder.
-- Choose difficulty table presets.
-- Enter difficulty table URLs manually.
-- Show / hide manually entered tables.
-
-Display settings:
-
-- Choose the display language from Japanese / English.
-- On first launch, a message asks you to choose the display language.
-- Choose the theme from Light Aqua / Geek Dark.
-- Choose whether BP updates are included in Lamp Updates.
-
-Saved data:
-
-- Entered paths and settings are saved and restored next time.
-- score.db, song.db, and Rival folder paths are carried over to the next launch.
-
-
-6. Difficulty Tables
---------------------
-
-You can choose common difficulty tables from presets.
-If you enter URLs manually, enter one URL per line.
-
-Example:
-  https://stellabms.xyz/sl/table.html
-  https://stellabms.xyz/st/table.html
-
-Manually entered tables can be shown or hidden with checkboxes without deleting the URLs.
-After loading, tables are displayed by table title instead of URL.
-
-
-7. How to Read the Display
---------------------------
-
-Player Data:
-  Shows player name, ID, SP grade, st/sl grades, and related data.
-  GENOSIDE2018 grade course passes require NORMAL CLEAR or better; EASY CLEAR is not counted as a pass.
-
-Lamp Breakdown:
-  Shows clear lamp counts for the whole difficulty table.
-
-Score Breakdown:
-  Shows counts for AAA / AA / A / B / C / D / E / F / NP / NS.
-  NO PLAY charts are not counted as F; they are treated as NP.
-
-CLEAR LAMP:
-  Shows FC / HC / NC / EC / FL / NP / NS rates by level.
-
-SCORE LAMP:
-  Shows AAA / AA / A / B / C / D / E / F / NP / NS rates by level.
-
-Chart List:
-  Open a level to check each chart in detail.
-
-Rank:
-  Shows score rank such as AAA / AA / A in the chart list.
-
-BP:
-  BAD + POOR total. NO PLAY charts show NO Data.
-
-NS:
-  Short for NO SONG. This means song data was not found in song.db.
-
-Folder Option:
-  Appears only while a level folder is open.
-  Press it to show a compact sort header.
-  While it is shown, the button text changes to Option Close.
-
-Folder Close:
-  Appears only while a level folder is open.
-  Press it to close the open level folder.
-
-Lamp Updates:
-  Shows updates compared with the previous load.
-
-RIVAL:
-  Shows score win/loss against loaded rivals.
-
-
-8. RIVAL Feature
-----------------
-
-Open the rival menu with the RIVAL button.
-
-Available actions:
-
-- Show loaded rivals.
-- Show score counts by rival.
-- Turn comparison targets ON/OFF with checkboxes.
-- Select All.
-- Clear All.
-- Show WIN / LOSE counts.
-- Show WIN / LOSE rates as a graph.
-- Switch win/loss scope between all charts and each difficulty table.
-- Sort by win rate, loss rate, or name.
-
-Win/loss judgment:
-
-- If your EX score is higher, it is WIN.
-- If your EX score is lower, it is LOSE.
-- Equal score is shown as DRAW.
-- If you or the rival is NO PLAY / NO SONG, it is not counted.
-
-Rival column in the chart list:
-
-- Background color based on the rival lamp.
-- WIN / LOSE / DRAW.
-- Rival name.
-- Rival EX score.
-- Rival score rate.
-- Rival lamp.
-
-
-9. Lamp Updates
-----------------
-
-Lamp Updates compares the previous load with the current load.
-
-Shown updates:
-
-- Charts whose clear lamp improved.
-- Charts whose BP decreased.
-- Charts whose EX score improved.
-
-BP Update:
-  Turn on "Include charts with lower BP in Lamp Updates" from Menu to show this.
-
-Score Update:
-  Shows charts whose EX score improved, separately from lamp and BP updates.
-  Charts that improved score at the same time as a lamp update are also shown here.
-
-Image export:
-  Use "Export Today's Updates" in Lamp Updates.
-
-
-10. Image Export
-----------------
-
-Today's update image:
-
-- Use "Export Today's Updates" in Lamp Updates.
-- Exports lamp updates, BP updates, and score updates.
-- Also shows key hit count and number of updated charts.
-
-Difficulty table summary image:
-
-- Export from each difficulty table summary.
-- Exports Lamp Breakdown, Score Breakdown, and CLEAR LAMP / SCORE LAMP graphs.
-
-Save folder:
-
-- You can choose it from Screenshot Folder in Menu.
-- If blank, images are saved to L2TV's default screenshot folder.
-
-Format:
-
-- PNG
-
-File names:
-
-- Today's updates
-  L2TV_Today_yyyymmddhhmmss.png
-
-- Difficulty table summary
-  L2TV_Table_TableSymbol_yyyymmddhhmmss.png
-
-If a file with the same name already exists:
-
-- It is not overwritten. A number is added to the end of the filename.
-
-Save complete:
-
-- "Screenshot saved!" is shown.
-
-
-11. Saved Data
---------------
-
-L2TV saves the following information so it can be used immediately next time:
-
-- score.db path
-- song.db path
-- Rival folder path
-- Screenshot save folder
-- Entered difficulty table URLs
-- Show / hide state for manually entered tables
-- Selected difficulty table presets
-- Selected display language
-- Selected theme
-- Whether BP updates are included in Lamp Updates
-- Previous load result
-
-How to clear saved data:
-
-1. Open Menu.
-2. Press Clear Saved Data.
-
-Only L2TV's saved app data is deleted.
-LR2 score.db, song.db, and Rival DB files are not deleted.
-
-
-12. Automatic Reload
---------------------
-
-If the previously loaded score.db / song.db has changed,
-L2TV can detect the update and reload on the next launch or load.
-
-This makes it easier to open L2TV after playing LR2 and check new lamps,
-BP updates, score updates, and related changes.
-
-
-13. Themes
-----------
-
-Light Aqua:
-  A bright aqua-based theme.
-
-Geek Dark:
-  A dark, black-based theme.
-
-You can switch themes from Menu.
-
-
-14. Safety
-----------
-
-L2TV reads LR2 score.db, song.db, and Rival DB files,
-but it does not write to DB files.
-
-Confirmed safety points:
-
-- score.db, song.db, and Rival DB are handled as read-only.
-- SQL writes such as UPDATE / DELETE / DROP TABLE are not executed against LR2 DB files.
-- There is no process that deletes LR2 folders or DB files.
-- There is no process that moves, renames, or overwrites LR2 DB files.
-- There is no process that executes arbitrary external commands.
-- Images are not saved outside the user-selected screenshot folder without permission.
-- Existing image files are not overwritten.
-- Dangerous characters are removed from image filenames before saving.
-- The local API is restricted so external sites cannot easily use it without permission.
-- Dangerous Electron features are disabled.
-- There is no feature that uploads score.db, song.db, or Rival DB to the outside.
-
-In short, L2TV is a tool for viewing LR2 data,
-not for changing or deleting LR2 score data.
-
-
-15. Network Access
-------------------
-
-L2TV may connect to the internet to load difficulty table URLs.
-
-Examples:
-
-- Selected difficulty table presets
-- Difficulty table URLs entered by the user
-
-Data that is not sent:
-
-- score.db
-- song.db
-- Rival DB
-- LR2 player data
-- Contents of local DB files
-
-DB contents are read and displayed on the local PC.
-
-
-16. Windows Warnings
---------------------
-
-Personal, unsigned apps may trigger warnings from Windows SmartScreen
-or antivirus software.
-
-This does not mean the app has dangerous behavior.
-It is a common warning for apps with little signing or distribution history.
-
-If you are unsure, confirm the distribution source before running it.
-
-
-17. Updating
-------------
-
-zip version:
-
-1. Close L2TV.
-2. Extract the new L2TV-1.0.4-win-x64.zip.
-3. Replace the old L2TV folder with the new one.
-
-Installer version:
-
-1. Run the new L2TV-Setup-1.0.4.exe.
-2. Install over the previous version.
-
-Notes:
-
-- Close L2TV before updating.
-- LR2 score.db / song.db are not part of the update process.
-
-
-18. Uninstalling
-----------------
-
-Installer version:
-
-1. Open Windows Settings.
-2. Find L2TV under Apps.
-3. Uninstall it.
-
-Important:
-
-- If you installed version 1.0.1 or earlier directly into a personal folder such as Desktop, do not run the uninstaller.
-- Version 1.0.2 and later include a safety check that prevents deleting anything other than a dedicated L2TV folder.
-
-zip version:
-
-1. Delete the L2TV folder.
-   Do not use Windows uninstall for the zip version.
-
-If you also want to delete saved app data:
-
-1. Start L2TV before uninstalling.
-2. Open Menu.
-3. Press Clear Saved Data.
-4. Then uninstall the app.
-
-
-19. FAQ
--------
-
-Q. Can I use it without an internet connection?
-A. You can view previously saved settings and local DB data. Loading new difficulty table URLs requires an internet connection.
-
-Q. Can score.db or song.db be modified?
-A. No. They are handled as read-only.
-
-Q. Can Rival DB be modified?
-A. No. Rival information is also handled as read-only.
-
-Q. Can I use it without loading a difficulty table?
-A. Yes. You can show Player Data only.
-
-Q. Is song.db required?
-A. Some features can be shown with score.db only, but chart matching, grades,
-NO SONG detection, and related features are more accurate with song.db.
-
-Q. Is the Rival folder required?
-A. No. Set it only if you want rival comparison.
-
-Q. Where are images saved?
-A. They are saved to the folder selected in Screenshot Folder. If blank, the default screenshot folder is used.
-
-Q. Can I post exported images to streams or social media?
-A. Images may include player names, rival names, and updated charts. Check that they do not contain information you do not want to publish.
-
-Q. What happens when I enter a difficulty table URL?
-A. L2TV fetches that table data and matches it against local DB chart information. score.db / song.db are not uploaded.
-
-Q. What is NS?
-A. NS means NO SONG. It is a chart that exists in the difficulty table but was not found in the loaded song.db.
-
-Q. What is BP Update?
-A. A chart whose BP decreased compared with the previous load. It can be included in Lamp Updates by turning on the option.
-
-Q. What is Score Update?
-A. A chart whose EX score improved compared with the previous load. It is shown in the Score Update section separately from lamp and BP updates.
-
-Q. What is Rank?
-A. The score grade such as AAA / AA / A calculated from EX score rate.
-
-Q. What is Folder Option?
-A. A compact option display for the open level folder. It can show the sort header.
-
-
-20. Version
------------
-
-L2TV 1.0.4
+L2TV
+L2TV (LR2 Table Viewer) は、Lunatic Rave 2 のローカルデータとBMS難易度表を照合し、クリアランプ、スコア、BP、段位、ライバル比較などを確認できるWindows向けビューアーです。
+開発・制作: HiLowPsi
+
+最新バージョン: 1.0.5
+[!IMPORTANT]
+L2TVはインストール不要のzip版です。解凍すると構成データが L2TV フォルダ内にまとまります。削除するときはWindowsのアンインストーラーを使わず、解凍して作成された L2TV専用フォルダだけ をゴミ箱へ移動してください。
+
+概要
+L2TVは、LR2の score.db / song.db / Rival DBをローカルPC上で読み取り、選択した難易度表と譜面ハッシュを照合して表示します。
+LR2のDBは読み取り専用で扱います。
+score.db / song.db / Rival DBを書き換えたり削除したりしません。
+ローカルDBを外部へアップロードする機能はありません。
+難易度表一覧や難易度表データの取得時のみ、インターネット通信を行います。
+特徴
+難易度表
+難易度表一覧から読み込みたい表を選択できます。
+一覧では tag1 が SP の難易度表だけを取得します。
+General / Personal / Self-made Chart Only で絞り込めます。
+URLを直接指定して、一覧にない難易度表も追加できます。
+URL追加時に header.json からシンボルと表名を自動取得します。
+追加済みの表は縦リストで表示され、マウスドラッグまたは上下ボタンで並べ替えられます。
+並べ替えた順番は保存され、アプリ内の難易度表表示順にも反映されます。
+Player Data・段位
+プレイヤー名とIDを表示します。
+SP段位、st段位、sl段位を表示します。
+score.db の仕様を「自動判別」「従来LR2IR互換」「BMS-IR」から選択できます。
+段位認定コース自体のクリア記録を参照し、構成する単曲のクリアランプは合格判定に使用しません。
+GENOSIDE2018段位認定は NORMAL CLEAR 以上を合格として扱います。
+2018 / 2012 / 2009のOverjoyをすべて合格している場合は専用表示になります。
+ランプ・スコア集計
+表全体とレベル別のCLEAR LAMP / SCORE LAMPを表示します。
+ランプ内訳と、AAA / AA / A / B / C / D / E / F / NP / NSのスコア内訳を表示します。
+NO PLAYの譜面はFに含めず、NPとして扱います。
+レベルフォルダ自体を横グラフとして表示します。
+ライトモードとダークモードに対応しています。
+譜面一覧
+Lv / Title / Artist / Lamp / Rank / EX/Rate / BP / Play Count / Rival を表示します。
+RankはAAA / AA / Aなどを色付きバッジで表示します。
+各列を昇順・降順で並べ替えられます。
+フォルダを開いている間は、画面下部の Folder Close から閉じられます。
+Folder Option から、開いているフォルダ専用の並べ替えヘッダーを表示できます。
+本日更新
+前回読み込みから更新されたクリアランプ、BP、EXスコアを表示します。
+表外譜面を更新楽曲として含めるか選択できます。
+前回読み込みから増えた打鍵回数とプレイ時間を表示します。
+score.db / song.db の更新を起動時に検知し、確認後に読み込めます。
+本日更新をPNG画像として出力できます。
+更新譜面が多い場合は、250件ごとに複数のPNGへ自動分割します。
+ライバル
+LR2のRivalフォルダを読み込み、譜面ごとのWIN / LOSE / DRAWを表示します。
+ライバルのEXスコア、スコアレート、クリアランプを比較できます。
+WIN率順 / LOSE率順 / 名前順で並べ替えられます。
+比較対象を個別選択、全選択、全解除できます。
+表示・画像出力
+日本語 / Englishを切り替えられます。
+Light Aqua / Geek Darkテーマを選択できます。
+本日更新と難易度表サマリーをPNGで保存できます。
+スクリーンショットの保存先を指定できます。
+動作要件
+Windows 10 / 11（64bit）
+Lunatic Rave 2
+LR2の score.db（必須）
+LR2の song.db（推奨）
+インターネット接続（難易度表一覧・難易度表データの新規取得時）
+ライバル比較を利用する場合は、LR2のRivalフォルダも必要です。
+一般的な配置例:
+score.db: LR2files\Database\Score\プレイヤー名.db
+song.db:  LR2files\Database\song.db
+Rival:    LR2files\Rival
+導入手順
+配布ページから L2TV-1.0.5-win-x64.zip をダウンロードします。
+zipを任意の場所へ解凍します。
+解凍して作成された L2TV フォルダを開きます。
+L2TV.exe を起動します。
+インストール操作や管理者権限は通常必要ありません。
+個人配布の未署名アプリのため、Windows SmartScreenが警告を表示する場合があります。配布元とファイルのSHA256を確認してから実行してください。
+更新方法
+起動中のL2TVを終了します。
+新しいzipを解凍します。
+新しく作成された L2TV フォルダを使用します。
+LR2の score.db / song.db は更新作業の対象ではありません。
+削除方法
+解凍して作成された L2TV 専用フォルダをゴミ箱へ移動してください。デスクトップやダウンロードなど、親フォルダそのものは削除しないでください。
+使い方
+L2TVを起動し、初回表示で日本語またはEnglishを選択します。
+画面右上の「メニュー」を開きます。
+「LR2 score.db パス」の参照ボタンから score.db を選択します。
+「song.db パス」の参照ボタンから song.db を選択します。
+score.db の仕様を選択します。迷う場合は「自動判別」のままで構いません。
+ライバル比較を使う場合は、Rivalフォルダを指定します。
+「一覧を開く」から難易度表一覧を開き、読み込む表にチェックを入れます。
+必要に応じて「追加済み」を開き、ドラッグで表示順を変更します。
+「表とランプを読み込む」を押します。
+難易度表を選択しなくても、Player Dataだけを読み込んで表示できます。
+難易度表一覧にない表を追加する
+難易度表一覧を開きます。
+「URL指定」を選択します。
+table.html または header.json のURLを入力します。
+「追加」を押します。
+追加時にヘッダー情報を取得し、一覧表示が シンボル: 難易度表名 に更新されます。取得できなかった場合はURL由来の仮名で追加されます。
+保存データを消す
+メニューの「保存データを消す」を押すと、L2TV内に保存されたパス、設定、前回読み込み結果を削除できます。LR2のDBファイルは削除されません。
+最新のアップデート履歴
+v1.0.5
+難易度表一覧から表を選択して読み込めるようにしました。
+一覧をSP難易度表に限定し、tag2 によるタグフィルターへ対応しました。
+URL指定による難易度表追加と、シンボル・表名の自動取得に対応しました。
+追加済み難易度表の縦リスト表示、ドラッグ並べ替え、順序保存に対応しました。
+レベルフォルダをCLEAR LAMP / SCORE LAMPの横グラフ表示へ変更しました。
+譜面一覧へRank、EX/Rate、BP、Play Count、Rival表示を追加・整理しました。
+表外譜面の更新表示、起動時のDB更新検知、打鍵回数・プレイ時間表示に対応しました。
+本日更新の画像を250件ごとに自動分割できるようにしました。
+Rival比較、WIN率 / LOSE率 / 名前順の並べ替えに対応しました。
+従来LR2IR互換DBとBMS-IR DBの自動判別・切り替えに対応しました。
+日本語 / English切り替えと、ライト / ダークテーマへ対応しました。
+詳細は同梱の 更新履歴.txt を参照してください。
+ライセンス
+Copyright (c) 2026 HiLowPsi. All rights reserved.
+現時点では、本ソフトウェアおよびソースコードに明示的なオープンソースライセンスは付与していません。再配布、改変版の公開、商用利用については、事前に作者へ確認してください。
+本ソフトウェアが利用する第三者製ライブラリには、それぞれのライセンスが適用されます。また、Lunatic Rave 2、BMS-IR、各難易度表および収録データの権利は、それぞれの制作者・運営者に帰属します。
+L2TVは、Lunatic Rave 2、BMS-IR、および各難易度表運営者の公式ソフトウェアではありません。
